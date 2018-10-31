@@ -1,0 +1,27 @@
+:root {
+  --primary: #d05825;
+  --secondary: #e36c2d;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+.btn {
+  background-color: var(--primary) !important;
+}
+.btn:hover {
+  background-color: var(--secondary) !important;
+}
+.btn {
+  border-width: 1px;
+  border-color: #eec4b0 !important;
+}
+.btn:focus {
+  border-width: 5px;
+  border-color: #eec4b0 !important;
+  box-shadow: none;
+}
+
+p {
+  font-family: "Antic", sans-serif !important;
+}
