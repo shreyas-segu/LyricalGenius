@@ -13,7 +13,7 @@ class Lyrics extends Component {
   componentDidMount() {
     axios
       .get(
-        `http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${
+        `https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${
           this.props.match.params.id
         }&apikey=${process.env.REACT_APP_MM_KEY}`
       )
@@ -21,7 +21,7 @@ class Lyrics extends Component {
         this.setState({ lyrics: res.data.message.body.lyrics });
 
         return axios.get(
-          `http://api.musixmatch.com/ws/1.1/track.get?track_id=${
+          `https://api.musixmatch.com/ws/1.1/track.get?track_id=${
             this.props.match.params.id
           }&apikey=${process.env.REACT_APP_MM_KEY}`
         );
